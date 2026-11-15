@@ -1,0 +1,32 @@
+{
+  "name": "2step-gpt",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --use-system-ca node_modules/astro/bin/astro.mjs dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "seed:mavuka": "node --use-system-ca scripts/seed-mavuka-presentation.mjs",
+    "seed:mavuka-questions": "node --use-system-ca scripts/seed-mavuka-question-bank.mjs",
+    "seed:mavuka-demo": "node --use-system-ca scripts/seed-mavuka-demo-only.mjs",
+    "seed:mavuka-expanded-demo": "node --use-system-ca scripts/seed-mavuka-expanded-demo.mjs",
+    "seed:mavuka-business-bible": "node --use-system-ca scripts/seed-mavuka-business-bible-demo.mjs"
+  },
+  "dependencies": {
+    "@astrojs/react": "latest",
+    "@astrojs/sitemap": "latest",
+    "@astrojs/vercel": "^11.0.21",
+    "@supabase/supabase-js": "^2.119.0",
+    "@tailwindcss/vite": "latest",
+    "astro": "latest",
+    "lucide-react": "^1.72.0",
+    "motion": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}

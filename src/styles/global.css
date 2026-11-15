@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Jost:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Starter-question cards intentionally show the question only. */
+button.group.min-h-14 p {
+  display: none;
+}
+
+/* Keep the four service-specific starter questions in a left-hand stack. */
+button.group.min-h-14 {
+  grid-column: 1;
+  justify-self: start;
+  width: fit-content;
+}
+
+.question-resource-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  margin-top: .35rem;
+}
+
+.question-resource-badges span {
+  border: 1px solid #cbd6af;
+  border-radius: 999px;
+  background: #f5f8eb;
+  color: #3d491f;
+  font-size: .62rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: .2rem .4rem;
+  text-transform: uppercase;
+}
+
+:root { font-family: "Jost", ui-sans-serif, system-ui, sans-serif; color:#252525; background:#f5f0e8; }
+* { box-sizing:border-box; }
+body { margin:0; min-width:320px; background:#f5f0e8; }
+h1, h2, h3 { font-family:"Cormorant Garamond", Georgia, serif; }
+.bg-\[\#f8f7fd\] { background-color:#f5f0e8 !important; }
+.text-\[\#101022\] { color:#252525 !important; }
+.bg-\[\#5422bb\], .bg-\[\#5427bd\] { background-color:#4d5a28 !important; }
+.text-\[\#5123b8\], .text-\[\#5422bb\], .text-\[\#5b29bd\], .text-\[\#6a45c4\] { color:#4d5a28 !important; }
+.bg-\[\#eee7ff\], .bg-\[\#f0eaff\], .bg-\[\#f1edff\] { background-color:#e8e4dc !important; }
+.bg-\[\#f0eaff\] { background-color:#f0ece4 !important; }
+.border-\[\#6b3cd1\] { border-color:#6b7c3a !important; }
+a { color:inherit; text-decoration:none; }
+button, input { font:inherit; }
+.action { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; border:1px solid #e4dfee; border-radius:999px; background:#fff; padding:.72rem 1rem; font-size:.875rem; font-weight:650; color:#242237; box-shadow:0 2px 5px rgba(47,31,91,.07); transition:transform .15s ease, border-color .15s ease; }
+.action:hover { transform:translateY(-1px); border-color:#bba5ec; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior:auto !important; transition-duration:.01ms !important; animation-duration:.01ms !important; } }

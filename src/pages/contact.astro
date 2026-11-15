@@ -1,0 +1,24 @@
+---
+import '../styles/global.css';
+import ContactForm from '../components/ContactForm';
+
+const whatsappMessage = encodeURIComponent('Hi Mavuka, I would like to speak to a human.');
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact Mavuka People Advisory</title>
+  </head>
+  <body class="bg-[#f8f7fd] text-[#101022]">
+    <main class="mx-auto max-w-2xl px-5 py-14">
+      <a href="/" class="text-sm font-bold text-[#5422bb]">← Back to Question Pad</a>
+      <p class="mt-12 text-sm font-bold uppercase tracking-[.16em] text-[#6a45c4]">Mavuka People Advisory</p>
+      <h1 class="mt-3 text-5xl font-black tracking-[-.06em]">Request a consultation.</h1>
+      <p class="mt-4 text-lg text-[#504e61]">Tell us a little about your organisation and the challenge you would like to discuss.</p>
+      <a href={`https://wa.me/27722963758?text=${whatsappMessage}`} target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center rounded-full bg-[#4d5a28] px-5 py-3 font-bold text-white shadow-sm transition hover:bg-[#3d491f]">WhatsApp: Speak to a human</a>
+      <div class="mt-8"><ContactForm client:load /></div>
+    </main>
+  </body>
+</html>
